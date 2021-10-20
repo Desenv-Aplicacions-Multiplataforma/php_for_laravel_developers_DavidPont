@@ -20,7 +20,7 @@ $statement=$dbh->prepare('SELECT * FROM task;');
 
 $statement->execute();
 
-$tasks = $statement->fetchAll(PDO::FETCH_OBJ);
+$tasks = $statement->fetchAll(PDO::FETCH_CLASS,'Task');
 
 //var_dump($tasks);
 
