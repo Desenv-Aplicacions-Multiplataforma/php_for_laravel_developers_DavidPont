@@ -1,5 +1,8 @@
 <?php
 
+
+use App\Models\Task;
+
 function greet(){
     $name= htmlspecialchars($_GET['name']);
     $surname= htmlspecialchars($_GET['surname']);
@@ -12,17 +15,7 @@ function dd($xivato){
 }
 
 
-function conectDB($config){
 
-    try{
-        return new PDO(
-            $config['database']['databasetype'].':host='.$config['database']['host'].';dbname='.$config['database']['name'],
-            $config['database']['user'],
-            $config['database']['password']);
-    } catch (\Exception $e){
-        echo 'Error de conexió a la base de dades';
-    }
-}
 
 function fetchAllTasks($dbh){
 
@@ -30,7 +23,7 @@ function fetchAllTasks($dbh){
 
     $statement->execute();
 
-    return $statement->fetchAll(PDO::FETCH_CLASS, 'Task');
+    return $statement->fetchAll(PDO::FETCH_CLASS, Task::class);
 
 
 }
