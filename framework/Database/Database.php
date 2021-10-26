@@ -21,12 +21,13 @@ class Database
 
     function selectAll($table) {
         $dbh = $this->conection->conectDB($this->config);
-        $statement = $dbh->prepare("SELECT * FROM tasks;");
+        $statement = $dbh->prepare("SELECT * FROM $table;");
 
         $statement->execute();
 
         return $statement->fetchAll(PDO::FETCH_CLASS, Task::class);
     }
+
 
 
     function insert() {
