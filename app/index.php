@@ -3,8 +3,6 @@
 use Framework\App;
 use Framework\Database\Database;
 
-require 'app/helpers.php';
-
 // POO -> OPP
 
 //WISHFULL PROGRAMING
