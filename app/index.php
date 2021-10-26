@@ -1,5 +1,6 @@
 <?php
 
+use Framework\App;
 use Framework\Database\Database;
 
 require 'app/helpers.php';
@@ -8,9 +9,9 @@ require 'app/helpers.php';
 
 //WISHFULL PROGRAMING
 
-$database = new Database($app->get('config'));
-$tasks=$database->selectAll('tasks');
+$tasks = App::get('database')->selectAll('tasks');
 
+//$database = new Database(App::get('config')['database']);
 //$tasks = Database::selectAll('tasks');
 //$tasks = Task::selectAll('tasks'); -> versio de laravel eloquent
 
