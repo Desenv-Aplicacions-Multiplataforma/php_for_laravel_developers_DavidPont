@@ -6,6 +6,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        header{
+            background: beige;
+            padding: 2em;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 <nav>
@@ -17,6 +24,11 @@
         <li><a href="/index.php">Home</a></li>
     </ul>
 </nav>
-Estas a la pagina de tasks
+    <header>
+
+        Soc contact
+
+    </header>
 </body>
 </html>
+
