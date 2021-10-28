@@ -15,18 +15,11 @@
     </style>
 </head>
 <body>
-<nav>
-    <ul>
-        <li><a href="/tasks.html">Tasks</a></li>
-        <li><a href="/users.html">Users</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/index.php">Home</a></li>
-    </ul>
-</nav>
+    <nav>
+        <?php require '../resources/views/layout/nav.blade.php'?>
+    </nav>
     <header>
         <h1><?=$greeting;?></h1>
-
         <table>
             <tr>
                 <th>Id</th>

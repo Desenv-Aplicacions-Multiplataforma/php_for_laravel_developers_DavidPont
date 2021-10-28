@@ -13,5 +13,4 @@ $tasks = App::get('database')->selectAll('tasks');
 
 
 //$greeting= greet();
-
-require '../resources/views/contact.blade.php';
+require '../resources/views/about.blade.php';

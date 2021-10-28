@@ -6,17 +6,22 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        header{
+            background: beige;
+            padding: 2em;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 <nav>
-    <ul>
-        <li><a href="/tasks.html">Tasks</a></li>
-        <li><a href="/users.html">Users</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/index.php">Home</a></li>
-    </ul>
+    <nav>
+        <?php require '../resources/views/layout/nav.blade.php'?>
+    </nav>
 </nav>
-USERS HERE!
+<header>
+    ABOUT HERE!
+</header>
 </body>
 </html>

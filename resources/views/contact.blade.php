@@ -16,18 +16,10 @@
 </head>
 <body>
 <nav>
-    <ul>
-        <li><a href="/tasks.html">Tasks</a></li>
-        <li><a href="/users.html">Users</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/index.php">Home</a></li>
-    </ul>
+    <?php require '../resources/views/layout/nav.blade.php'?>
 </nav>
     <header>
-
         Soc contact
-
     </header>
 </body>
 </html>

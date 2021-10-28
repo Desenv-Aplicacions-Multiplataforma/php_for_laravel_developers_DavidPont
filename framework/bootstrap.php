@@ -8,14 +8,14 @@ use Framework\Database\Database;
 use Framework\Route;
 
 
-$routes=require 'routes.php';
+$routes=require '../routes.php';
 
 $dotenv = Dotenv::createImmutable(__DIR__.'/..');
 $dotenv->load();
 
 $app = new App();
 
-$app->bind('config', require 'config.php');
+$app->bind('config', require '../config.php');
 
 App::bind('database', new Database(
     Conection::make(App::get('config')['database'])
