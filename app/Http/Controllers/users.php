@@ -2,15 +2,6 @@
 
 use Framework\App;
 
-// POO -> OPP
+$users = App::get('database')->selectAll('users');
 
-//WISHFULL PROGRAMING
-$tasks = App::get('database')->selectAll('tasks');
-
-//$database = new Database(App::get('config')['database']);
-//$tasks = Database::selectAll('tasks');
-//$tasks = Task::selectAll('tasks'); -> versio de laravel eloquent
-
-
-//$greeting= greet();
 require '../resources/views/users.blade.php';

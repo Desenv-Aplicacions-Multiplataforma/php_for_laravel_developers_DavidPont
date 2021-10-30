@@ -18,8 +18,25 @@
 <nav>
     <?php require '../resources/views/layout/nav.blade.php'?>
 </nav>
-    <header>
-        USERS HERE!
-    </header>
+<header>
+    <h1><?=$greeting;?></h1>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Completed</th>
+        </tr>
+        <?php foreach ($users as $user): ?>
+        <tr>
+            <td><?= $user->id;?></td>
+            <td><?= $user->name;?></td>
+            <td><?= $user->surname;?></td>
+            <td><?= $user->email;?></td>
+        </tr>
+        <?php endforeach; ?>
+
+    </table>
+</header>
 </body>
 </html>
