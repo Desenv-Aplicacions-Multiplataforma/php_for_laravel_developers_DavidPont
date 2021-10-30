@@ -10,7 +10,11 @@
     </div>
 </header>
 <main>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores at aut cumque deserunt dolore doloribus eos, error expedita explicabo laboriosam molestiae mollitia perspiciatis, quasi repudiandae suscipit tenetur, ut voluptatibus.
+    <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet harum magni natus officia! Accusamus aperiam eveniet hic in maxime, mollitia nobis nostrum optio porro, quidem, quo quod reprehenderit suscipit veniam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet harum magni natus officia! Accusamus aperiam eveniet hic in maxime, mollitia nobis nostrum optio porro, quidem, quo quod reprehenderit suscipit veniam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet harum magni natus officia! Accusamus aperiam eveniet hic in maxime, mollitia nobis nostrum optio porro, quidem, quo quod reprehenderit suscipit veniam?</p>
+    </div>
 </main>
 
 <?php require '../resources/views/layout/footer.blade.php'?>
