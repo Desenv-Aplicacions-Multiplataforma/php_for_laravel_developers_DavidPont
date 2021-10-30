@@ -1,27 +1,17 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        header{
-            background: beige;
-            padding: 2em;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-<nav>
-    <nav>
-        <?php require '../resources/views/layout/nav.blade.php'?>
-    </nav>
-</nav>
-<header>
-    ABOUT HERE!
+<?php require '../resources/views/layout/html_head.blade.php'?>
+
+<?php require '../resources/views/layout/nav.blade.php'?>
+
+<header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+        <h1 class="text-3xl font-bold text-gray-900">
+            About
+        </h1>
+    </div>
 </header>
-</body>
-</html>
+<main>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores at aut cumque deserunt dolore doloribus eos, error expedita explicabo laboriosam molestiae mollitia perspiciatis, quasi repudiandae suscipit tenetur, ut voluptatibus.
+</main>
+
+<?php require '../resources/views/layout/footer.blade.php'?>
+
