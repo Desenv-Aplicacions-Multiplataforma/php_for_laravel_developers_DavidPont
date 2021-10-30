@@ -12,5 +12,5 @@ $tasks = App::get('database')->selectAll('tasks');
 //$tasks = Task::selectAll('tasks'); -> versio de laravel eloquent
 
 
-$greeting= greet();
+//$greeting= greet();
 require '../resources/views/index.blade.php';
