@@ -48,6 +48,10 @@
                             From: "transform opacity-100 scale-100"
                             To: "transform opacity-0 scale-95"
                         -->
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
                     </div>
                 </div>
             </div>
